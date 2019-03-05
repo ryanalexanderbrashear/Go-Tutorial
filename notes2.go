@@ -46,6 +46,52 @@ func main() {
             .e55          Illegal: missing integer or fraction
          */
 
+      /* Escape Character Sequences */
 
+         /* When certain characters are preceded by a backslash, they will have a special meaning in Go. These are known as Escape Sequence codes which are used to represent newline (\n), tab (\t), backspace, etc. 
+
+            \\ - \ character
+            \' - ' character
+            \" - " character
+            \? - ? character
+            \a - alert or bell
+            \b - backspace
+            \f - form feed
+            \n - newline
+            \r - carriage return
+            \t - horizontal tab
+            \v - vertical tab
+            \ooo - octal number of 1-3 digits
+            \xhh... - hexadecimal number of 1 or more digits
+         */
+
+         fmt.Println("Hello\tWorld!") /* Example of using \t */
+
+      /* String Literals */
+
+         /* String literals or constants are enclosed in double quotes "". A string contains characters that are similar to character literals: plain characters, escape sequences, and universal characters.
+
+You can break a long line into multiple lines using string literals and separating them using whitespaces. 
+
+            "hello, dear"
+
+            "hello, \
+
+            dear"
+
+            "hello, " "d" "ear"
+
+         */
+
+      /* Const Keyword */
+
+         /* Like var for variables, const is the keyword used when declaring constants in Go. */
+
+         const LENGTH int = 10 /* It is considered best practice to declare constants using all capital letters */
+         const WIDTH int = 5   
+         var area int
+
+         area = LENGTH * WIDTH
+         fmt.Printf("value of area : %d", area)  
 
 }
